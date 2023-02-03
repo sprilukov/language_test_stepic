@@ -9,6 +9,7 @@ class TestMainPage1():
 
     def test_guest_should_see_login_link(self, browser):
         browser.get(link)
+        time.sleep(4)
         button = browser.find_element(By.CSS_SELECTOR, ".btn-add-to-basket")
         button.click()
         time.sleep(4)
