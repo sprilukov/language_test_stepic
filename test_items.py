@@ -7,7 +7,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
 class TestMainPage1():
 
-    def test_languages(self, browser):
+    def test_btn_add(self, browser):
         browser.get(link)
         time.sleep(30)
         x = browser.find_elements(By.CSS_SELECTOR, ".btn-add-to-basket")
